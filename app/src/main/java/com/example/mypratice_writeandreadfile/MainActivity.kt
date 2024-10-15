@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        //示範三類型的檔案讀寫法
         val withBasicWay = WithBasicWay()
         val withBufferedReader = WithBufferedReader()
         val withInputStream = WithInputStream()
