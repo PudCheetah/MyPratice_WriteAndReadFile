@@ -29,7 +29,7 @@ class WithBufferedReader {
     //一次性讀取檔案
     fun readFileBuffered(filePath: String): String{
         val file = File(filePath)
-        return BufferedReader(FileReader(file)).use { it.readLine()}
+        return BufferedReader(FileReader(file)).use { it.readText()}
     }
 
     //逐行讀取檔案
