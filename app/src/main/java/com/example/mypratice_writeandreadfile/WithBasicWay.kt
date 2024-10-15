@@ -5,9 +5,9 @@ import java.io.File
 class WithBasicWay {
 
     //寫入檔案
-    fun writeFileContent(filePath: String, content: String): String{
+    fun writeFileContent(filePath: String, content: String){
         val file = File(filePath)
-        return file.readText()
+        file.writeText(content)
     }
 
     //追加寫入檔案(不會刪除現有資料)
